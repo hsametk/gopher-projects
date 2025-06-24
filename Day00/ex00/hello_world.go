@@ -35,7 +35,6 @@ func main() {
 	fmt.Println("int:", i)
 	fmt.Println("float:", f)
 	fmt.Println("uint:", u)
-
 }
 
 // ex00: hello_world         - Print "Hello, World!" DONE

@@ -2,9 +2,13 @@ package main
 
 import "fmt"
 
-func main()  {
-	
-	//Zero_values
+func someFunction() (int, error) {
+	return 42, nil
+}
+
+func main() {
+
+	// Zero values
 	var nbr int
 	fmt.Println(nbr)
 	var str string
@@ -14,25 +18,30 @@ func main()  {
 	var float float64
 	fmt.Println(float)
 
-	//Multiple variable assignment
-	var a,b,c int  = 1, 5, 7
-	fmt.Printf("first %d, second %d, third %d", a,b,c)
-	//Blank identifier
+	// Multiple variable assignment
+	var a, b, c int = 1, 5, 7
+	fmt.Printf("first %d, second %d, third %d\n", a, b, c)
+
+	// Blank identifier
 	// Only need the error, discard the result
 	_, err := someFunction()
+	fmt.Println("err:", err)
 
 	// Only need the value, ignore the error
 	value, _ := someFunction()
+	fmt.Println("value:", value)
 
 	// Only need the index in a range loop
+	slice := []int{10, 20, 30}
 	for i, _ := range slice {
-	    // use i, ignore the value
+		fmt.Println("index:", i)
 	}
 
 	// Only need the value in a range loop
 	for _, value := range slice {
-	    // use value, ignore the index
+		fmt.Println("value:", value)
 	}
-	//Go'da alt çizgi _ ile gösterilen boş tanımlayıcı, 
+
+	// Go'da alt çizgi _ ile gösterilen boş tanımlayıcı,
 	// ihtiyacınız olmayan değerleri atmak için kullanılan özel bir tanımlayıcıdır.
 }
