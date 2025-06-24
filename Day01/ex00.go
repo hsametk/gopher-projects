@@ -23,8 +23,8 @@ func main()  {
 // ex01: switch_case       - Switch statements (with and without expression) DONE
 // ex02: for_loops         - All three forms of for loops DONE
 // ex03: range_iteration   - Range over slices, maps, strings  TODO
-// ex04: break_continue    - Loop control statements
+// ex04: break_continue    - Loop control statements DONE
 // ex05: goto_labels       - Proper use of goto (rare cases)
-// ex06: fizzbuzz          - Classic FizzBuzz problem
-// ex07: prime_checker     - Check if number is prime
-// ex08: multiplication_table - Generate multiplication tables
+// ex06: fizzbuzz          - Classic FizzBuzz problem DONE
+// ex07: prime_checker     - Check if number is prime DONE
+// ex08: multiplication_table - Generate multiplication tables DONE
